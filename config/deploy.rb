@@ -4,7 +4,7 @@ set :repo_url, "https://github.com/AndersonCamargo20/DeployOnDigitalOcean"
 set :user, 'deploy'
 set :deploy_to, "/var/www/awesome_bucket"
 
-append :linked_files, "config/database.yml", "config/storage.yml", "config/master.key"
+append :linked_files, "shared/config/database.yml", "shared/config/database.yml", "shared/config/database.yml"
 append :linked_dirs, "log", "tmp"
 
 
